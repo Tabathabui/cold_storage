@@ -257,14 +257,35 @@ h5 {
 
 
 .col-sm:hover > img.blur {
-    filter: blur(5px)
+    filter: blur(2px)
 }
 
 .img-wrapper:hover > .dot.blur {
     background-color: rgba(255, 255, 255, .8);
 }
 
+.col-sm-4:active > .btn {
+   background-color: tomato;
 
+}
+
+.col-sm-4:visited > .btn {
+    background-color: tomato;
+ 
+ }
+
+ .col-sm-4:hover > .btn {
+    background-color: #7F6D9B;
+ 
+ }
+
+ .text-center {
+     font-size: 10px;
+ }
+
+.slack {
+    size: 30px;
+}
 
 
 
