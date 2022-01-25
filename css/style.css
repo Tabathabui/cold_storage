@@ -190,8 +190,6 @@ h5 {
       position: relative;
       overflow: hidden;
       max-width: 500px;
-      
-      
     
   }
 
@@ -224,23 +222,25 @@ h5 {
       justify-content: center;
       align-items: center;
       text-align: center;
+      font-family: 'Permanent Marker', cursive;
 
   }
 
   .img-wrapper > img,
-  .img-wrapper > .content {
-      transition: 200ms ease-in-out;
+  .img-wrapper > .content
+  .img-wrapper > .dot.blur {
+      transition: 600ms ease-in-out;
   }
-
 
 
 .img-wrapper > .dot {
     width: 80%;
     aspect-ratio: 1 / 1;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .4);
     border-radius: 50%;
     position: absolute;
     margin: 10%;
+
     
 }
 
@@ -258,14 +258,17 @@ h5 {
 
 .col-sm:hover > img.blur {
     filter: blur(5px)
-
 }
 
-.img-wrapper:hover > img.blur {
-    filter: blur(5px)
-    
+.img-wrapper:hover > .dot.blur {
+    background-color: rgba(255, 255, 255, .8);
 }
-    
+
+
+
+
+
+
 
 
 
