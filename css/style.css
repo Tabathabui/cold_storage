@@ -43,6 +43,7 @@ h5 {
 
 
 .btn-right {
+    
     float: right;
 }
 
@@ -137,13 +138,9 @@ h5 {
 
   img[src="images/logofridge.png"] {
     max-width: 250px;
-    display: flex;
-    flex-direction: row;
-    flex: center;
-    margin-left: 400px;
+    justify: center;
     padding: 20px;
     padding-bottom: 20px;
-    
   }
 
   #dropdownMenuLink {
@@ -156,6 +153,8 @@ h5 {
 
   .dropdown {
       float: right;
+      margin-right: 25px;
+      padding: 28px;
   }
 
   .icon {
@@ -182,7 +181,7 @@ h5 {
 
   body {
       margin: 40px;
-      margin-bottom: 25rem;
+      
   }
 
   .grid {
@@ -257,6 +256,8 @@ h5 {
     background-color: #93BE8B;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: center;
+   
     
 }
 
@@ -299,6 +300,45 @@ h5 {
     background-color: #E4EFE2;
     max-height: 89px;
 }
+
+.learn {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    
+}
+
+.social {
+    color: white;
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: grey;
+    padding: 50px;
+
+}
+
+.card {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-small;
+}
+
+.hear {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+}
+
+
+
+
+
+
 
 
 
