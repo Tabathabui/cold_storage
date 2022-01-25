@@ -1,0 +1,254 @@
+
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    color: #446B65;
+
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #7F6D9B;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Chelsea Market', cursive;
+    color: #446B65;
+    font-size: 24;
+}
+
+.display-4 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background-color: #7F6D9B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18;
+    font-weight: semi-bold;
+    
+  }
+
+
+
+.btn-right {
+    float: right;
+}
+
+  .btn {
+    transition-duration: 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: lightgrey; /* Green */
+    color: white;
+  }
+
+.indent {
+      text-indent: 30px;
+  }
+
+.fridge {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+
+
+  /* Style the navigation menu */
+.topnav {
+    
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    max-width: 100%;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    display: block;
+    
+    
+    
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #E4EFE2;
+    color: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+   
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #E4EFE2;
+    color: white;
+
+    
+  }
+
+  .jumbotron {
+      Padding: 40px;
+  }
+
+
+  .col-sm {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      
+  }
+
+  .col-sm img {
+    max-width: 75%;
+  }
+
+  img[src="images/logofridge.png"] {
+    max-width: 250px;
+    
+  }
+
+  #dropdownMenuLink {
+      font-size: x-small;
+      font-family: 'Montserrat', sans-serif;
+      color: #446B65;
+      text-decoration: none;
+
+  }
+
+  .dropdown {
+      float: right;
+  }
+
+  .icon {
+    color: white;  
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    
+  }
+
+  .container1 {
+    position: relative;
+  }
+
+  .important {
+     text-align: center;
+  }
+
+  body {
+      margin: 40px;
+      margin-bottom: 25rem;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 1500px;
+      
+  }
+  .img-wrapper {
+      position: relative;
+      overflow: hidden;
+      max-width: 500px;
+      
+      
+    
+  }
+
+  .img-wrapper img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .overlay {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(255, 255, 255, .4);
+    position: absolute;
+  
+}
+
+  .img-wrapper .content {
+      position: absolute;
+      inset: 0;
+      font-size: 1.2rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+  }
+
+  .img-wrapper > img,
+  .img-wrapper > .content {
+      transition: 200ms ease-in-out;
+  }
+
+
+
+.img-wrapper > .dot {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin: 10%;
+    
+    
+}
+
+.col-sm {
+   text-align: center;
+   
+}
+
+
+
