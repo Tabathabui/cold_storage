@@ -86,7 +86,7 @@ h5 {
   /* Style navigation menu links */
   .topnav a {
     color: black;
-    padding: 27px 20px;
+    padding: 25px 20px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -109,15 +109,14 @@ h5 {
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #E4EFE2;
-    color: black;
+    color: grey;
    
   }
   
   /* Style the active link (or home/logo) */
   .active {
+    height: 79px;
     background-color: #E4EFE2;
-    color: white;
-
     
   }
 
@@ -138,6 +137,12 @@ h5 {
 
   img[src="images/logofridge.png"] {
     max-width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex: center;
+    margin-left: 400px;
+    padding: 20px;
+    padding-bottom: 20px;
     
   }
 
@@ -288,9 +293,11 @@ h5 {
 }
 
 .header {
-    padding: 10px;
+    padding-top: 20;
+    padding-bottom: 9px;
     text-align: center;
     background-color: #E4EFE2;
+    max-height: 89px;
 }
 
 
