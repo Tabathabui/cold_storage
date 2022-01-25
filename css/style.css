@@ -86,7 +86,7 @@ h5 {
   /* Style navigation menu links */
   .topnav a {
     color: black;
-    padding: 20px 20px;
+    padding: 27px 20px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -108,7 +108,7 @@ h5 {
 
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #E4EFE2;
     color: black;
    
   }
@@ -285,6 +285,12 @@ h5 {
 
  .button .slack {
     max-width: 30px;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background-color: #E4EFE2;
 }
 
 
