@@ -3,7 +3,7 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #446B65;
-    font-size: 48;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;
     
@@ -13,14 +13,14 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     color: #7F6D9B;
     text-align: center;
-    font-size: 36;
+    font-size: 36px;
     
 }
 h3 { 
   font-family: 'Montserrat', sans-serif;
   color: #446B65;
   text-align: center;
-  font-size: 24;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -28,21 +28,21 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   color: #446B65;
   text-align: center;
-  font-size: 16;
+  font-size: 16px;
   
 }
 
 h5 {
   font-family: 'Permanent Marker', cursive;
     color: #446B65;
-    font-size: 36;
+    font-size: 24px;
 }
 
 h6 {
   font-family: 'Montserrat', sans-serif;
   color: #7F6D9B;
   text-align: center;
-  font-size: 3;
+  font-size: 10px;
   font-weight: bold;
 }
 
@@ -111,6 +111,7 @@ h6 {
 
   #fridgeleft {
     min-width: 300px;
+    
   }
 
 
@@ -235,6 +236,7 @@ h6 {
      text-align: center;
      color: #446B65;
      line-height: 2;
+     font-size: 52;
 
   }
 
