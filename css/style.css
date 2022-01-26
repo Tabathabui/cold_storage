@@ -18,7 +18,7 @@ h2 {
 }
 h3 { 
   font-family: 'Montserrat', sans-serif;
-  color: #7F6D9B;
+  color: #446B65;
   text-align: center;
   font-size: 24;
   font-weight: bold;
@@ -29,12 +29,29 @@ h4 {
   color: #446B65;
   text-align: center;
   font-size: 16;
+  
 }
 
 h5 {
   font-family: 'Permanent Marker', cursive;
     color: #446B65;
     font-size: 36;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #7F6D9B;
+  text-align: center;
+  font-size: 3;
+  font-weight: bold;
+}
+
+.h7 {
+  font-family: 'Montserrat', sans-serif;
+  color: #446B65;
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
 }
 
 .display-4 {
@@ -162,8 +179,6 @@ h5 {
       font-weight: bold;
       font-size: 10;
       
-
-      
   }
 
   .col-sm img {
@@ -193,7 +208,7 @@ h5 {
       position: absolute;
       right: 10px;
       top: 42px;
-      
+
 
       
   }
@@ -218,6 +233,8 @@ h5 {
 
   .important {
      text-align: center;
+     color: #446B65;
+     line-height: 2;
 
   }
 
@@ -268,8 +285,11 @@ h5 {
       justify-content: center;
       align-items: center;
       text-align: center;
-      font-family: 'Permanent Marker', cursive;
-
+      flex-direction: column;
+      font-family: 'Montserrat', sans-serif;
+      color: #7F6D9B;
+      font-weight: bold;
+      
   }
 
   .img-wrapper > img,
@@ -387,6 +407,12 @@ h5 {
   display: block;
   
 
+}
+
+@media only screen and (max-width: 1026px) {
+  #fadeshow1 {
+      display: none;
+  }
 }
 
 
