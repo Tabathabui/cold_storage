@@ -124,7 +124,12 @@ h5 {
 
   .col-sm {
       margin-top: 50px;
-      margin-bottom: 100px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: #7F6D9B;
+      font-weight: bold;
+      
+
       
   }
 
@@ -258,7 +263,7 @@ h5 {
 
 
 .col-sm:hover > img.blur {
-    filter: blur(2px)
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .img-wrapper:hover > .dot.blur {
