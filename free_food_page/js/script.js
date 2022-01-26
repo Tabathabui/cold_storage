@@ -31,7 +31,7 @@ const createCard = (id, data) => {
                   <ul>
                     <li>fruit</li>
                     <li>bread</li>
-                    <li>vegetables</li>
+                    <li>veggies</li>
                     <li>water</li>
                   </ul>
                 </div>
@@ -40,7 +40,7 @@ const createCard = (id, data) => {
                   <ul>
                     <li>fruit</li>
                     <li>bread</li>
-                    <li>vegetables</li>
+                    <li>veggies</li>
                     <li>water</li>
                   </ul>
                 </div>
@@ -67,7 +67,7 @@ const createCard = (id, data) => {
                   Check-In
                 </button>
                 <button class="button-secondary">
-                  Check-In
+                  Get Directions
                 </button>
               </div>
               </div>
@@ -111,58 +111,56 @@ function initMap() {
   ;[
     {
       position: { lat: 34.0522, lng:  -118.2437  },
-      img: './assets/images/silverlake_fridge.png',
-      title: 'Silver Lake',
+      img: './assets/images/Fridge1.png',
+      title: 'El Serano',
       hours: `
         <div>Tues-Fri 7:30AM-7:30PM;</div>
         <div>Sat-Mon 8AM-7:30PM;</div>
       `,
-      address: '1515 Griffith Park Blvd, <br /> Los Angeles, CA 90026',
-      handle: '@silverlakefridge',
+      address: '6469 Huntington Dr N, <br /> Los Angeles, CA 90032',
+      handle: '@ElSerenoFridge',
     },
     {
       position: { lat: 34.066300, lng: -118.297580 },
-      img: './assets/images/silverlake_fridge.png',
-      title: 'Silver Lake',
+      img: './assets/images/Fridge5.png',
+      title: 'Koreatown Solar',
       hours: `
         <div>Tues-Fri 7:30AM-7:30PM;</div>
         <div>Sat-Mon 8AM-7:30PM;</div>
       `,
       address: '1515 Griffith Park Blvd, <br /> Los Angeles, CA 90026',
-      handle: '@silverlakefridge',
+      handle: '@KoreaTownFridge',
     },
     {
       position: { lat: 34.026310, lng: -118.243870 },
-      img: './assets/images/silverlake_fridge.png',
-      title: 'Silver Lake',
+      img: './assets/images/Fridge6.png',
+      title: 'South Arts District',
       hours: `
-        <div>Tues-Fri 7:30AM-7:30PM;</div>
-        <div>Sat-Mon 8AM-7:30PM;</div>
+        <div>24/7</div>
       `,
-      address: '1515 Griffith Park Blvd, <br /> Los Angeles, CA 90026',
-      handle: '@silverlakefridge',
+      address: '1411 Newton St, <br /> Los Angeles, CA 90021',
+      handle: '@southartsdistrictfridge',
     },
     {
       position: { lat: 34.090430, lng: -118.276990 },
-      img: './assets/images/silverlake_fridge.png',
-      title: 'Silver Lake',
+      img: './assets/images/Fridge4.png',
+      title: 'East Hollywood',
       hours: `
-        <div>Tues-Fri 7:30AM-7:30PM;</div>
-        <div>Sat-Mon 8AM-7:30PM;</div>
+        <div>24/7</div>
       `,
-      address: '1515 Griffith Park Blvd, <br /> Los Angeles, CA 90026',
-      handle: '@silverlakefridge',
+      address: '4621 Santa Monica Blvd, <br /> Los Angeles, CA 90029',
+      handle: '@EastHollywoodFridge',
     },
     {
       position: { lat: 34.114840, lng: -118.235960 },
-      img: './assets/images/silverlake_fridge.png',
-      title: 'Silver Lake',
+      img: './assets/images/Fridge2.png',
+      title: 'Glassell Park',
       hours: `
         <div>Tues-Fri 7:30AM-7:30PM;</div>
         <div>Sat-Mon 8AM-7:30PM;</div>
       `,
-      address: '1515 Griffith Park Blvd, <br /> Los Angeles, CA 90026',
-      handle: '@silverlakefridge',
+      address: '3516 Eagle Rock Blvd, <br /> Los Angeles, CA 90065',
+      handle: '@GlassellParkFridge',
     },
     {
       position: { lat: 34.081750, lng: -118.260880 },
