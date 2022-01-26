@@ -37,22 +37,18 @@ h5 {
     font-family: 'Montserrat', sans-serif;
     font-size: 18;
     font-weight: semi-bold;
+    margin-left: 20px;
     
   }
 
-
-
-.btn-right {
-    
-    float: right;
-}
 
   .btn {
     transition-duration: 0.2s;
+    
   }
   
   .btn:hover {
-    background-color: lightgrey; /* Green */
+    background-color: #615574; /* Green */
     color: white;
   }
 
@@ -154,7 +150,8 @@ h5 {
   .dropdown {
       float: right;
       margin-right: 25px;
-      padding: 28px;
+      padding: 14px;
+      
   }
 
   .icon {
@@ -244,8 +241,7 @@ h5 {
     border-radius: 50%;
     position: absolute;
     margin: 10%;
-
-    
+   
 }
 
 .col-sm {
@@ -257,8 +253,7 @@ h5 {
     margin-top: 50px;
     margin-bottom: 50px;
     justify-content: center;
-   
-    
+     
 }
 
 
@@ -280,16 +275,16 @@ h5 {
  
  }
 
- .col-sm-4:hover > .btn {
+.col-sm-4:hover > .btn {
     background-color: #7F6D9B;
  
  }
 
- .text-center {
+.text-center {
      font-size: 10px;
  }
 
- .button .slack {
+.button .slack {
     max-width: 30px;
 }
 
@@ -317,8 +312,10 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: grey;
-    padding: 50px;
+    background-color: #D9D8DD;
+    padding: 100px;
+    
+    
 
 }
 
@@ -326,12 +323,17 @@ h5 {
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: x-small;
+
 }
 
 .hear {
     display: flex;
     justify-content: center;
     max-width: 200px;
+}
+
+.text-center {
+    margin-top: 0;
 }
 
 
