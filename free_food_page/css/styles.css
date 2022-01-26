@@ -1,0 +1,130 @@
+/* DEFAULT STYLES */
+body {
+  color: #446b65;
+  background-color: white;
+}
+
+button {
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 116px;
+  color: white;
+  width: 100%;
+  border: 2px solid transparent;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BACKGROUND COLORS */
+.background-color-primary {
+  background-color: white;
+}
+
+.background-color-secondary {
+  background-color: rgba(147, 190, 139, 0.15); /* #93BE8B */
+}
+
+/* BACKGROUND COLORS */
+
+.color-primary {
+  color: #5b968d;
+}
+
+.color-secondary {
+  color: #7f6d9b;
+}
+
+/* BUTTONS  */
+.button-primary {
+  background-color: #5b968d;
+}
+
+.button-secondary {
+  background-color: white;
+  color: #7f6d9b;
+  border-color: #7f6d9b;
+}
+
+/* GOOGLE MAPS */
+
+#autocomplete {
+  border-radius: 6px;
+  margin-bottom: 12px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+#map {
+  height: 350px;
+}
+
+/* STYLES */
+
+.site-container {
+  height: 100vh;
+  max-width: 1200px;
+}
+
+.search-section .main-title {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.search-section .tab-nav {
+  padding: 10px 20px;
+}
+
+.search-section .tab {
+  display: inline-block;
+  padding: 5px;
+}
+
+.search-section .tab.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.search-section .card .fridge-img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.search-section .card .content {
+  padding: 20px;
+}
+
+.search-section .card .title {
+  margin-bottom: 10px;
+}
+
+.search-section .card .hours {
+  margin-bottom: 10px;
+}
+
+.search-section .card .address {
+  margin-bottom: 10px;
+}
+
+.search-section .card .items {
+  display: flex;
+}
+
+/* .search-section .card .items ul {
+  list-style: disc;
+} */
+
+.search-section .card .content img {
+  display: flex;
+  height: 20px;
+  width: 20px;
+}
