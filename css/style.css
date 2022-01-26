@@ -60,7 +60,7 @@ h6 {
 }
 
 .btn {
-    color: white;
+    
     background-color: #7F6D9B;
     border: none;
     color: white;
@@ -120,7 +120,7 @@ h6 {
 .topnav {
     
     overflow: hidden;
-    background-color: white;
+    background-color: #E4EFE2;
     position: absolute;
     max-width: 100%;
   }
@@ -156,7 +156,7 @@ h6 {
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #E4EFE2;
-    color: grey;
+    color: #615574;
    
   }
   
@@ -419,9 +419,6 @@ h6 {
       display: none;
   }
 }
-
-
-
 
 
 
