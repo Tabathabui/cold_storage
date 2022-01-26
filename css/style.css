@@ -42,7 +42,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   color: #7F6D9B;
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -133,13 +133,12 @@ h6 {
   /* Style navigation menu links */
   .topnav a {
     color: black;
-    padding: 25px 20px;
+    padding: 20px 15px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     display: block;
-    
-    
+    width: 376px;
     
   }
   
@@ -375,6 +374,7 @@ h6 {
     color: white;
     margin-top: 20px;
     margin-right: -15px;
+    
 }
 
 .flex-container {
@@ -427,8 +427,9 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 400px;
+  margin-right: 400px;
+ 
 }
 
 @media only screen and (max-width: 900px) {
@@ -439,6 +440,32 @@ h6 {
     margin-left: 100px;
     margin-right: 100px;
   }
+}
+
+
+.topnav h6 {
+  color: black;
+
+  
+}
+
+.mobile-l {
+  width: 75%;
+  text-align: left;
+  margin: auto 0;
+
+}
+
+.mobile-s {
+  width: 40px;
+  padding: 5;
+  width: 50px;
+}
+
+.mobile-l h6 {
+  margin-bottom: 0;
+  text-align: left;
+ 
 }
 
 
