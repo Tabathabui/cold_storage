@@ -57,14 +57,13 @@ h5 {
   }
 
 .fridge {
-
-    display: inline-block;
-    overflow: hidden;
     max-width: 100%;
-    height: 500px;
-    text-align: center;
-    margin: auto;
-}
+    height: auto;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
 
 
   /* Style the navigation menu */
@@ -125,7 +124,12 @@ h5 {
 
   .col-sm {
       margin-top: 50px;
-      margin-bottom: 100px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: #7F6D9B;
+      font-weight: bold;
+      
+
       
   }
 
@@ -135,6 +139,7 @@ h5 {
 
   img[src="images/logofridge.png"] {
     max-width: 250px;
+    justify: center;
     padding: 20px;
     padding-bottom: 20px;
   }
@@ -246,25 +251,21 @@ h5 {
 
 .col-sm {
    text-align: center;
-   
 }
 
 .learn {
     background-color: #93BE8B;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin: auto;
+    justify-content: center;
      
 }
 
 
-<<<<<<< HEAD
-=======
 .col-sm:hover > img.blur {
-    filter: blur(2px)
+    background-color: rgba(255, 255, 255, .8);
 }
 
->>>>>>> parent of 9cc767b (top buttons)
 .img-wrapper:hover > .dot.blur {
     background-color: rgba(255, 255, 255, .8);
 }
@@ -340,30 +341,6 @@ h5 {
     margin-top: 0;
 }
 
-.col-sm-8 {
-    display: inline-block; /* change the default display type to inline-block */
-    overflow: hidden; 
-}
-
-#fridgeLeft {
-    max-height: 500px;
-}
-
-.fridgeright {
-    height: auto;
-    border: none;
-    background: transparent;
-    box-shadow: none;
-}
-
-.col-sm {
-    background-color: #EFF5EE;
-    padding-top: 40px; 
-}
-
-#circleLinks {
-    margin-top: 20px;
-}
 
 
 
