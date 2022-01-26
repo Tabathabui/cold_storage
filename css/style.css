@@ -20,13 +20,13 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   color: #7F6D9B;
   text-align: center;
-  font-size: 10;
+  font-size: 24;
   font-weight: bold;
 }
 
 h4 { 
   font-family: 'Montserrat', sans-serif;
-  color: #7F6D9B;
+  color: #446B65;
   text-align: center;
   font-size: 16;
 }
@@ -34,7 +34,7 @@ h4 {
 h5 {
   font-family: 'Permanent Marker', cursive;
     color: #446B65;
-    font-size: 24;
+    font-size: 36;
 }
 
 .display-4 {
@@ -63,11 +63,13 @@ h5 {
 
   .button {
     margin-bottom: 30px;
+    
   }
 
 
   .btn {
     transition-duration: 0.2s;
+    
     
   }
   
@@ -170,9 +172,10 @@ h5 {
 
   img[src="images/logofridge.png"] {
     max-width: 250px;
-    justify: center;
     padding: 20px;
     padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
   }
 
   #dropdownMenuLink {
@@ -184,9 +187,14 @@ h5 {
   }
 
   .dropdown {
-      float: right;
       margin-right: 25px;
       padding: 14px;
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 42px;
+      
+
       
   }
 
@@ -210,6 +218,7 @@ h5 {
 
   .important {
      text-align: center;
+
   }
 
   body {
@@ -288,7 +297,8 @@ h5 {
     background-color: #93BE8B;
     margin-top: 50px;
     margin-bottom: 50px;
-    justify-content: center;
+    margin: auto;
+    
      
 }
 
@@ -327,9 +337,9 @@ h5 {
 .header {
     padding-top: 20;
     padding-bottom: 9px;
-    text-align: center;
     background-color: #E4EFE2;
     max-height: 89px;
+
 }
 
 .learn {
@@ -370,6 +380,13 @@ h5 {
 
 .text-center {
     margin-top: 0;
+}
+
+.fridgelogo {
+  margin: auto;
+  display: block;
+  
+
 }
 
 
