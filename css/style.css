@@ -431,7 +431,15 @@ h6 {
   margin-right: 300px;
 }
 
-
+@media only screen and (max-width: 900px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
 
 
 
