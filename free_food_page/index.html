@@ -19,13 +19,11 @@
     crossorigin="anonymous"
   ></script>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/browsericon.png" /> -->
-
     <title>Comida Gratis</title>
   </head>
-
-  <body style="position: relative;">
-    <div class="container site-container">
-      <section class="search-section">
+  <body>
+    <div class="container">
+      <header>
         <div class="main-title">
           <h1>Find A Fridge Near You</h1>
         </div>
@@ -33,24 +31,38 @@
           <div class="tab active">Free Food</div>
           <div class="tab">Contribute Food</div>
         </div>
+      </header>
+      <section>
         <div class="row">
           <div class="col-md-5">
-            <div class="py-3"><span style="font-weight: 600;">6 Fridges</span> Found Near You</div>
+            <div class="py-3">
+              <span style="font-weight: 600;">6 Fridges</span> Found Near You
+            </div>
             <div id="googlemaps">
               <input id="autocomplete" />
+              <div id="maps-filter" >
+                <button type="button" id="maps-filter-button" data-bs-toggle="popover" data-bs-placement="bottom">
+                  <img src="assets/icons/Filter.svg" />
+                </button>
+              </div>
               <div id="map"></div>
             </div>
           </div>
-          <div class="col-md-7" style="overflow-y: scroll; height:425px">
-            <div class="py-3">Let the community know how it's doing by checking in.</div>
-              <ul id="cards"></ul>
+          <div class="col-md-7">
+            <div style="height: 100%; position: relative;">
+              <div class="cards-window">
+                <div class="py-3">
+                  Let the community know how it's doing by checking in.
+                </div>
+                <ul id="cards"></ul>
+              </div>
             </div>
+          </div>
         </div>
       </section>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXDo6b4jblBqU-Z32kKkU-7bTwsyAonnI&libraries=places&callback=initMap"></script>
+    <script src="js/filter.js" charset="utf-8"></script>
   </body>
 </html>
-
-<!-- style="overflow-y: scroll; height:425px -->

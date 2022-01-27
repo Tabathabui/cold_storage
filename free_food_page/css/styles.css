@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
 /* DEFAULT STYLES */
 body {
   color: #446b65;
   background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 button {
   padding: 8px;
   font-weight: 600;
-  border-radius: 116px;
+  border-radius: 25px;
   color: white;
   width: 100%;
   border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -66,81 +76,144 @@ ul {
   z-index: 1000;
 }
 
+.pac-container {
+  height: auto;
+}
+
 #map {
   height: 350px;
 }
 
-@media only screen and (min-width: 600px) {
-  #googlemaps {
-    position: fixed;
-  }
+#maps-filter {
+  position: absolute;
+  right: 62px;
+  top: 16px;
+  z-index: 1000;
+}
 
-  #map {
-    width: 475px;
-  }
+#maps-filter > button > img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+#maps-filter > button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  width: 30px;
+  margin-left: auto;
+}
+
+#maps-menu {
+  width: 300px;
+  padding: 26px 20px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+#maps-buttons button {
+  width: 30%;
+  height: 30px;
+  margin-bottom: 8px;
+  color: #616161;
 }
 
 /* STYLES */
 
-.site-container {
+body > div {
   height: 100vh;
   width: 100%;
   max-width: 1200px;
-  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.search-section .main-title {
+header .main-title {
   text-align: center;
   padding: 40px 10px;
 }
 
-.search-section .tab-nav {
+header .tab-nav {
   padding: 10px 20px;
 }
 
-.search-section .tab {
+header .tab {
   display: inline-block;
   padding: 5px;
 }
 
-.search-section .tab.active {
+header .tab.active {
   text-decoration: underline;
   font-weight: 600;
 }
 
-.search-section .card .fridge-img {
+section {
+  height: 100%;
+}
+
+section > .row {
+  height: 100%;
+}
+
+section .cards-window {
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+section #cards {
+  display: flex;
+  flex-direction: column;
+}
+
+section .card .fridge-img {
   display: flex;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.search-section .card .content {
+section .card .content {
   padding: 20px;
 }
 
-.search-section .card .title {
+section .card .title {
   margin-bottom: 10px;
 }
 
-.search-section .card .hours {
+section .card .hours {
   margin-bottom: 10px;
 }
 
-.search-section .card .address {
+section .card .address {
   margin-bottom: 10px;
 }
 
-.search-section .card .items {
+section .card .items {
   display: flex;
 }
 
-/* .search-section .card .items ul {
-  list-style: disc;
-} */
-
-.search-section .card .content img {
+section .card .content img {
   display: flex;
   height: 20px;
   width: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  body > div {
+    overflow: initial;
+  }
+
+  section .cards-window {
+    position: static;
+    overflow: auto;
+  }
 }

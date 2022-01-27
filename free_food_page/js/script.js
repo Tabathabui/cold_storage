@@ -1,6 +1,6 @@
-let map;
-let places;
-let autocomplete;
+let map
+let places
+let autocomplete
 
 const createCard = (id, data) => {
   const cardEl = document.createElement('li')
@@ -83,34 +83,34 @@ const createCard = (id, data) => {
 // When the user selects a city, get the place details for the city and
 // zoom the map in on the city.
 const onPlaceChanged = () => {
-  const place = autocomplete.getPlace();
+  const place = autocomplete.getPlace()
 
   if (place.geometry && place.geometry.location) {
-    map.panTo( { lat: 34.0522,lng: -118.2437 });
-    map.setZoom(12);
+    map.panTo({ lat: 34.0522, lng: -118.2437 })
+    map.setZoom(12)
   } else {
-    document.getElementById("autocomplete").placeholder = "Enter a city";
+    document.getElementById('autocomplete').placeholder = 'Enter a city'
   }
 }
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    mapId: "38ca4c609f81275f",
+  map = new google.maps.Map(document.getElementById('map'), {
+    mapId: '38ca4c609f81275f',
     zoom: 10,
-    center: { lat: 34.0522,lng: -118.2437 },
+    center: { lat: 34.0522, lng: -118.2437 },
     mapTypeControl: false,
     panControl: false,
     zoomControl: false,
     streetViewControl: false,
-  });
+  })
 
   const icon = './assets/icons/broccoli.svg'
   const cardsEl = document.getElementById('cards')
 
-  // Markers 
+  // Markers
   ;[
     {
-      position: { lat: 34.0522, lng:  -118.2437  },
+      position: { lat: 34.0522, lng: -118.2437 },
       img: './assets/images/Fridge1.png',
       title: 'El Serano',
       hours: `
@@ -121,7 +121,7 @@ function initMap() {
       handle: '@ElSerenoFridge',
     },
     {
-      position: { lat: 34.066300, lng: -118.297580 },
+      position: { lat: 34.0663, lng: -118.29758 },
       img: './assets/images/Fridge5.png',
       title: 'Koreatown Solar',
       hours: `
@@ -132,7 +132,7 @@ function initMap() {
       handle: '@KoreaTownFridge',
     },
     {
-      position: { lat: 34.026310, lng: -118.243870 },
+      position: { lat: 34.02631, lng: -118.24387 },
       img: './assets/images/Fridge6.png',
       title: 'South Arts District',
       hours: `
@@ -142,7 +142,7 @@ function initMap() {
       handle: '@southartsdistrictfridge',
     },
     {
-      position: { lat: 34.090430, lng: -118.276990 },
+      position: { lat: 34.09043, lng: -118.27699 },
       img: './assets/images/Fridge4.png',
       title: 'East Hollywood',
       hours: `
@@ -152,7 +152,7 @@ function initMap() {
       handle: '@EastHollywoodFridge',
     },
     {
-      position: { lat: 34.114840, lng: -118.235960 },
+      position: { lat: 34.11484, lng: -118.23596 },
       img: './assets/images/Fridge2.png',
       title: 'Glassell Park',
       hours: `
@@ -163,7 +163,7 @@ function initMap() {
       handle: '@GlassellParkFridge',
     },
     {
-      position: { lat: 34.081750, lng: -118.260880 },
+      position: { lat: 34.08175, lng: -118.26088 },
       img: './assets/images/silverlake_fridge.png',
       title: 'Silver Lake',
       hours: `
@@ -182,23 +182,21 @@ function initMap() {
       url,
     })
 
-    google.maps.event.addListener(marker, "click", () => {
+    google.maps.event.addListener(marker, 'click', () => {
       const card = document.getElementById(url)
-      if (card) {
-        card.scrollIntoView()
-      }
+      if (card) card.scrollIntoView()
     })
 
     cardsEl.append(createCard(url, cardData))
   })
 
   autocomplete = new google.maps.places.Autocomplete(
-    document.getElementById("autocomplete"),
+    document.getElementById('autocomplete'),
     {
-      types: ["(cities)"],
-      componentRestrictions: { country: "us" },
+      types: ['(cities)'],
+      componentRestrictions: { country: 'us' },
     }
-  );
+  )
 
-  autocomplete.addListener("place_changed", onPlaceChanged);
+  autocomplete.addListener('place_changed', onPlaceChanged)
 }
