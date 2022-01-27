@@ -1014,17 +1014,26 @@ img[src="AboutImages/logofridge.png"] {
   
 }
 
+
+.container5 {
+  display:flex;
+  flex-direction:row;
+  justify-content: left;
+  width: 100%;
+  
+}
+
+
 .mobile-l {
   width: 75%;
   text-align: left;
- 
-  background-color: green;
+  margin-top: 7px;
 
 }
 
 .mobile-s {
-  width: 25%;
-  background-color: tomato;
+  width: 40px;
+  
   
 }
 
