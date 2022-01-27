@@ -929,3 +929,8 @@ p {
   }
 }
 
+
+.btn-primary {
+  border-color: red;
+}
+
