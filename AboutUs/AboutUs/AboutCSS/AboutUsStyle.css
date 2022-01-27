@@ -943,3 +943,33 @@ body
 #headerContent{
   margin: 0 auto; width: 960px;
 }
+
+
+img[src="images/logofridge.png"] {
+  max-width: 250px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+#dropdownMenuLink {
+    font-size: x-small;
+    font-family: 'Montserrat', sans-serif;
+    color: #446B65;
+    text-decoration: none;
+
+}
+
+.dropdown {
+    margin-right: 25px;
+    padding: 14px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 42px;
+
+
+    
+}
