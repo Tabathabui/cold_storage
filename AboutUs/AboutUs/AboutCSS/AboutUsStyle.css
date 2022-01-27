@@ -970,6 +970,8 @@ img[src="AboutImages/logofridge.png"] {
     right: 10px;
     top: 42px;
 
+
+    
 }
 
 
@@ -1085,6 +1087,14 @@ img[src="AboutImages/logofridge.png"] {
   background-color: #615574; /* Green */
   color: white;
 }
+
+.social {
+  color: white;
+  margin-top: 20px;
+  margin-right: -15px;
+  
+}
+
 
 
 
