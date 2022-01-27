@@ -973,3 +973,82 @@ img[src="images/logofridge.png"] {
 
     
 }
+
+
+@media only screen and (max-width: 1026px) {
+  #fadeshow1 {
+      display: none;
+  }
+}
+
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 400px;
+  margin-right: 400px;
+ 
+}
+
+@media only screen and (max-width: 900px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .fridgelogo {
+    float: right;
+  }
+}
+
+.topnav h6 {
+  color: black;
+
+  
+}
+
+.mobile-l {
+  width: 75%;
+  text-align: left;
+  margin: auto 0;
+
+}
+
+.mobile-s {
+  width: 40px;
+  padding: 5;
+  width: 50px;
+}
+
+.mobile-l h6 {
+  margin-bottom: 0;
+  text-align: left;
+ 
+}
+
+.top1 {
+  padding: 50px;
+  
+}
+
+.content h5 {
+ 
+  font-size: 30px;
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .top1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+
