@@ -43,29 +43,43 @@
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="header">
- <!-- Top Navigation Menu -->
- <div class="topnav">
-    <a href="#home" class="active"></a>
- <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-   <a href="#home">Home</a>
-   <a href="#language">Language</a>
-   <a href="#about">About Us</a>
-   <a href="#involved">Get Involved</a>
-   <a href="#faq">FAQ</a>
-   <a href="#fridge">Find a Fridge</a>
-   <a href="#social"><div class="container5"><div class="row"><div class="mobile-s"><i class="fa fa-instagram fa-2x"></i></div><div class="mobile-l"><h6>@lacommunityfridges</h6></div></div></div></a>
-   <a href="#social"><div class="container6"><div class="row"><div class="mobile-s"><i class="fab fa-slack fa-2x"></i></div><div class="mobile-l"><h6>LA Community Fridge</h6></div></div></div></a>
-      </div>
-     
- <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-   <i class="fa fa-bars fa-lg"></i>
- </a>
- </div>
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Language</li></a>
+      <a href="#"><li>About Us</li></a>
+      <a href="#"><li>Get Involved</li></a>
+      <a href="#"><li>FAQ</li></a>
+      <a href="#"><li>Free Food</li></a>
+      <a href="#"><div class="container5"><div class="row"><div class="mobile-s"><i class="fa fa-instagram fa-2x"></i></div><div class="mobile-l"><h6>@lacommunityfridges</h6></div></div></div></a>
+      <a href="#"><div class="container6"><div class="row"><div class="mobile-s"><i class="fab fa-slack fa-2x"></i></div><div class="mobile-l"><h6>LA Community Fridge</h6></div></div></div></a>
+    </ul>
+  </div>
+</nav>
 
- <img src="images/logofridge.png" class="fridgelogo" alt="...">
+
+<img src="images/logofridge.png" class="fridgelogo" alt="...">
 
  
 
@@ -90,16 +104,46 @@
         <h2 class="">Take what you need, leave what you don't.</h2>
         
      </div>
-
+     <div class="container">
+      <div class="grid">
+          <div class="img-wrapper">
+            <span class="dot blur"></span>
+            
+            <span class="dot"><div class="content"><br><br><br><br><h5>About Us</h5><div class="h7"></div><h4></h4>
+                </div></span>
+              <img class="top1"src="images/girlsfridge.png">
+            
+          </div>
+          <div class="img-wrapper">
+            <span class="dot blur"></span>
+            
+            <span class="dot"><div class="content"><br><br><br><br><br><h5>Get Involved</h5><div class="h7"></div>
+                <h6><br></h6><h4></h4>
+                </div></span>
+            
+            <img class="top1" src="images/hands.png">
+            
+        </div>
+        <div class="img-wrapper">
+            <span class="dot blur"></span>
+            
+            <span class="dot"><div class="content"><br><br><br><br><br><h5>FAQ</h5><div class="h7"></div>
+              <h5></h5><h4></h4></div></span>
+            
+            <img class="top1"src="images/smilegirls.png">
+        </div>
+      </div>
+    </div>
+    <br><br>
     <!-- Used Bootstrap columns-->
 
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div class="col-sm"><img src="images/girlsfridge.png" class="blur" alt="..."><br><br><p>About Us</p></div>
             <div class="col-sm"><img src="images/hands.png" class="blur" alt="..."><br><br><p>Get Involved</p></div>
             <div class="col-sm"><img src="images/smilegirls.png" class="blur" alt="..."><br><br><p>FAQ</p></div>
-          </div>
-          <br><br>
+          
+          <br><br></div>-->
         <div class="row">
           <div class="col" id="fridgeleft">  
               <h5>What is a Community Fridge?</h5><br>
@@ -191,34 +235,6 @@
   </div>
 
 </div>
-<!--Footer
-<footer id="footer" class="footer wf-section">
-  <div class="w-container">
-    <div class="columns-2 w-row">
-      <div class="column-7 w-clearfix w-col w-col-6"><img src="images/insta.png" width="50" height="50" alt="" class="image-2">
-        <a href="#" class="link-2">Follow Us:</a>
-      </div>
-      <div class="column-8 w-clearfix w-col w-col-6">
-        <a href="#" class="link">Contact Us:</a><img src="images/Slack.png" width="50" height="50" alt="" class="image-3">
-      </div>
-    </div>
-    <div class="w-row">
-      <div class="column-5 w-col w-col-4">
-        <a href="#" class="link-3">About Us</a>
-      </div>
-      <div class="w-col w-col-4">
-        <a href="#" class="link-4">Get Involved</a>
-      </div>
-      <div class="column-6 w-col w-col-4">
-        <a href="#" class="link-5">FAQ</a>
-      </div>
-    </div>
-    <div class="text-block-3">© ColdStorage Team UCI UXUI Bootcamp 2022. All Rights Reserved.</div>
-  </div>
-</footer>-->
-
-
-
 
 
 
