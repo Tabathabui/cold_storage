@@ -33,6 +33,63 @@
       })(window, document);
     </script>
   </head>
+
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+   
+    <span></span>
+    <span></span>
+    <span></span>
+  
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Language</li></a>
+      <a href="#"><li>About Us</li></a>
+      <a href="#"><li>Get Involved</li></a>
+      <a href="#"><li>FAQ</li></a>
+      <a href="#"><li>Free Food</li></a>
+      <a href="#"><div class="container5"><div class="row"><div class="mobile-s"><i class="fa fa-instagram fa-2x"></i></div><div class="mobile-l"><h6>@lacommunityfridges</h6></div></div></div></a>
+      <a href="#"><div class="container6"><div class="row"><div class="mobile-s"><i class="fab fa-slack fa-2x"></i></div><div class="mobile-l"><h6>LA Community Fridge</h6></div></div></div></a>
+    </ul>
+  </div>
+</nav>
+
+<div id="header">
+  <img src="images/logofridge.png" class="fridgelogo" alt="...">
+</div>
+
+
+
+  <div class="dropdown" id="fadeshow1">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+             English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li><a class="dropdown-item" href="#">Mandarin</a></li>
+            <li><a class="dropdown-item" href="#">Korean</a></li>
+        </ul>
+        <a class="btn btn-primary btn-lg btn-right" href="#" role="button">Free Food</a></div>
+  </div>
+
+ 
   <body>
     <div id="top" class="section main wf-section">
       <div class="w-container">
