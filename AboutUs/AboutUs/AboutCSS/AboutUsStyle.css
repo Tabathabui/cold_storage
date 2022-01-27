@@ -945,7 +945,7 @@ body
 }
 
 
-img[src="images/logofridge.png"] {
+img[src="AboutImages/logofridge.png"] {
   max-width: 250px;
   padding: 20px;
   padding-bottom: 20px;
@@ -1050,5 +1050,43 @@ img[src="images/logofridge.png"] {
 
   }
 }
+
+
+.btn {
+    
+  background-color: #7F6D9B;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18;
+  margin-left: 20px;
+  
+  
+}
+
+.button {
+  margin-bottom: 30px;
+  
+}
+
+
+.btn {
+  transition-duration: 0.2s;
+  
+  
+}
+
+.btn:hover {
+  background-color: #615574; /* Green */
+  color: white;
+}
+
 
 
