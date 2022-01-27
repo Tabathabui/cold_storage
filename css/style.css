@@ -169,7 +169,9 @@ h6 {
   }
 
   .jumbotron {
-      Padding: 40px;
+      Padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
   }
 
 
