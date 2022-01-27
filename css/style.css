@@ -664,3 +664,7 @@ body
 #headerContent{
   margin: 0 auto; width: 960px;
 }
+
+.img-wrapper h4 {
+  font-weight: bold;
+}
