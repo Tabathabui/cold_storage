@@ -939,6 +939,8 @@ body
   background-color: #EFF5EE;
   height: 130px;
   margin-top: 0;
+  margin: auto;
+  text-align: center;
 }
 #headerContent{
   margin: 0 auto; width: 960px;
@@ -1015,14 +1017,15 @@ img[src="AboutImages/logofridge.png"] {
 .mobile-l {
   width: 75%;
   text-align: left;
-  margin: auto 0;
+ 
+  background-color: green;
 
 }
 
 .mobile-s {
-  width: 40px;
-  padding: 5;
-  width: 50px;
+  width: 25%;
+  background-color: tomato;
+  
 }
 
 .mobile-l h6 {
