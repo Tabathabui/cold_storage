@@ -193,6 +193,9 @@ h6 {
     padding-bottom: 20px;
     margin: auto;
     text-align: center;
+   
+   
+
   }
 
   #dropdownMenuLink {
@@ -415,7 +418,6 @@ h6 {
   margin: auto;
   display: block;
   
-
 }
 
 @media only screen and (max-width: 1026px) {
@@ -423,7 +425,6 @@ h6 {
       display: none;
   }
 }
-
 
 
 .links {
@@ -493,13 +494,6 @@ h6 {
 
 
 
-
-
-
-
-
-
-
 body
 {
   margin: 0;
@@ -507,8 +501,7 @@ body
   
   /* make it look decent enough */
   background: white;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+  
 }
 
 #menuToggle
@@ -658,5 +651,12 @@ body
   color: #446B65;
 }
 
-
-
+#header{
+  width:100%; 
+  background-color: #EFF5EE;
+  height: 130px;
+  margin-top: 0;
+}
+#headerContent{
+  margin: 0 auto; width: 960px;
+}
