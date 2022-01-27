@@ -123,7 +123,7 @@ ul {
 
 /* STYLES */
 
-body > div {
+#search {
   height: 100vh;
   width: 100%;
   max-width: 1200px;
@@ -217,3 +217,36 @@ section .card .content img {
     overflow: auto;
   }
 }
+
+/* HEADER */
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #e4efe2;
+}
+
+img[src="images/logofridge.png"] {
+  max-width: 250px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+#dropdownMenuLink {
+  font-size: x-small;
+  font-family: "Montserrat", sans-serif;
+  color: #446b65;
+  text-decoration: none;
+}
+
+.dropdown {
+  margin-right: 25px;
+  padding: 14px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 42px;
+}
+
+/* FOOTER */

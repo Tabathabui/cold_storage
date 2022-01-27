@@ -7,12 +7,12 @@ const createCard = (id, data) => {
   cardEl.id = id
   cardEl.className = 'card mb-4'
   cardEl.innerHTML = `
-    <div class="row gx-0">
+    <div class="row gx-0 background-color-secondary">
       <div class="col-lg-4">
         <img src=${data.img} class="fridge-img" />
       </div>
       <div class="col-lg-8">
-        <div class="content background-color-secondary">
+        <div class="content">
           <div class="row">
             <div class="col-6">
               <h4 class="title">${data.title}</h4>

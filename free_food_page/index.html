@@ -1,68 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/browsericon.png" /> -->
-    <title>Comida Gratis</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="main-title">
-          <h1>Find A Fridge Near You</h1>
-        </div>
-        <div class="tab-nav background-color-secondary">
-          <div class="tab active">Free Food</div>
-          <div class="tab">Contribute Food</div>
-        </div>
-      </header>
-      <section>
-        <div class="row">
-          <div class="col-md-5">
-            <div class="py-3">
-              <span style="font-weight: 600;">6 Fridges</span> Found Near You
-            </div>
-            <div id="googlemaps">
-              <input id="autocomplete" />
-              <div id="maps-filter" >
-                <button type="button" id="maps-filter-button" data-bs-toggle="popover" data-bs-placement="bottom">
-                  <img src="assets/icons/Filter.svg" />
-                </button>
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/4ef9ee0fef.js"></script>
+  <script src="https://kit.fontawesome.com/b2cdd26866.js" crossorigin="anonymous"></script>
+  <!-- STYLES -->
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <title>Comida Gratis</title>
+</head>
+
+<body>
+  <!-- HEADER START -->
+  <nav id="header" role="navigation">
+    <div id="menuToggle">
+      <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+      <input type="checkbox" />
+      <!--
+        Some spans to act as a hamburger.
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+      <ul id="menu">
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>Language</li>
+        </a>
+        <a href="#">
+          <li>About Us</li>
+        </a>
+        <a href="#">
+          <li>Get Involved</li>
+        </a>
+        <a href="#">
+          <li>FAQ</li>
+        </a>
+        <a href="#">
+          <li>Free Food</li>
+        </a>
+        <a href="#">
+          <div class="container5">
+            <div class="row">
+              <div class="mobile-s"><i class="fa fa-instagram fa-2x"></i></div>
+              <div class="mobile-l">
+                <h6>@lacommunityfridges</h6>
               </div>
-              <div id="map"></div>
             </div>
           </div>
-          <div class="col-md-7">
-            <div style="height: 100%; position: relative;">
-              <div class="cards-window">
-                <div class="py-3">
-                  Let the community know how it's doing by checking in.
-                </div>
-                <ul id="cards"></ul>
+        </a>
+        <a href="#">
+          <div class="container6">
+            <div class="row">
+              <div class="mobile-s"><i class="fab fa-slack fa-2x"></i></div>
+              <div class="mobile-l">
+                <h6>LA Community Fridge</h6>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </a>
+      </ul>
     </div>
-    <script src="js/script.js" charset="utf-8"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXDo6b4jblBqU-Z32kKkU-7bTwsyAonnI&libraries=places&callback=initMap"></script>
-    <script src="js/filter.js" charset="utf-8"></script>
-  </body>
+
+    <img src="images/logofridge.png" class="fridgelogo" alt="...">
+
+    <div class="dropdown" id="fadeshow1">
+      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        English
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Spanish</a></li>
+        <li><a class="dropdown-item" href="#">Mandarin</a></li>
+        <li><a class="dropdown-item" href="#">Korean</a></li>
+      </ul>
+      <a class="btn btn-primary btn-lg btn-right" href="#" role="button">Free Food</a>
+    </div>
+  </nav>
+  <!-- HEADER END -->
+
+  <div id="search" class="container">
+    <header>
+      <div class="main-title">
+        <h1>Find A Fridge Near You</h1>
+      </div>
+      <div class="tab-nav background-color-secondary">
+        <div class="tab active">Free Food</div>
+        <div class="tab">Contribute Food</div>
+      </div>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="py-3">
+            <span style="font-weight: 600;">6 Fridges</span> Found Near You
+          </div>
+          <div id="googlemaps">
+            <input id="autocomplete" />
+            <div id="maps-filter">
+              <button type="button" id="maps-filter-button" data-bs-toggle="popover" data-bs-placement="bottom">
+                <img src="assets/icons/Filter.svg" />
+              </button>
+            </div>
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="" style="height: 100%; position: relative;">
+            <div class="cards-window">
+              <div class="py-3">
+                Let the community know how it's doing by checking in.
+              </div>
+              <ul id="cards"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- FOOTER START -->
+  <footer class="text-center text-lg-start" style="background-color: #2D6159">
+    <div class="d-flex justify-content-center">
+      <div class="social">
+        <p>Contact Us:</p>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: transparent;">
+        <i class="fab fa-slack fa-lg"></i>
+      </button>
+      <div class="social">
+        <p>Follow Us:</p>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: transparent;">
+        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="links">
+        <p>About Us</p>
+        <p>Get Involved</p>
+        <p>FAQ</p>
+      </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © ColdStorage Team UCI UXUI Bootcamp 2022. All Rights Reserved
+
+    </div>
+    <!--Copyright-->
+  </footer>
+  <!-- FOOTER END -->
+  <script src="js/script.js" charset="utf-8"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXDo6b4jblBqU-Z32kKkU-7bTwsyAonnI&libraries=places&callback=initMap"></script>
+  <script src="js/filter.js" charset="utf-8"></script>
+</body>
+
 </html>
