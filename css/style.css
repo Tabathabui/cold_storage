@@ -680,3 +680,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
 html {
   overflow-x: hidden;
 }
+
+.img-wrapper h5 {
+  color: white;
+}
