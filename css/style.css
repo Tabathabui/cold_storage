@@ -34,8 +34,8 @@ h4 {
 
 h5 {
   font-family: 'Permanent Marker', cursive;
-    color: #446B65;
-    font-size: 24px;
+    color: #93be8b;
+    font-size: 30px;
 }
 
 h6 {
@@ -247,6 +247,14 @@ h6 {
 
   }
 
+  .important h5{
+    text-align: center;
+    color: #446B65;
+    line-height: 2;
+    font-size: 52;
+
+ }
+
   body {
       margin: 40px;
       
@@ -286,11 +294,10 @@ h6 {
   
 }
 
-  .img-wrapper .content {
-      position: absolute;
+ .contenttop {
+      position: relative;
       inset: 0;
       font-size: 1.2rem;
-      padding: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -300,7 +307,25 @@ h6 {
       color: #7F6D9B;
       font-weight: bold;
       
+     
+      
   }
+
+  .img-wrapper .content {
+    position: absolute;
+    inset: 0;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #7F6D9B;
+    font-weight: bold;
+    
+}
 
   .img-wrapper > img,
   .img-wrapper > .content
@@ -316,7 +341,18 @@ h6 {
     border-radius: 50%;
     position: absolute;
     margin: 10%;
+    display: block;
+    
    
+}
+
+.dot2 {
+ 
+  margin-top: -40px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px;
+ 
 }
 
 .col-sm {
@@ -485,11 +521,13 @@ h6 {
 .top1 {
   padding: 50px;
   
+  
 }
 
 .content h5 {
  
   font-size: 30px;
+  
   
 }
 
@@ -673,6 +711,7 @@ body
 
 .img-wrapper h4 {
   font-weight: bold;
+
 }
 
 html, body {width: auto!important; overflow-x: hidden!important} 
@@ -682,5 +721,13 @@ html {
 }
 
 .img-wrapper h5 {
-  color: white;
+  color: #446B65;
+  font-size: 25px;
+ 
+}
+
+.imgwithtext {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
 }

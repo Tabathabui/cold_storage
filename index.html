@@ -41,7 +41,7 @@
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<nav role="navigation">
+<nav id="header" role="navigation">
   <div id="menuToggle">
     <!--
     A fake / hidden checkbox is used as click reciever,
@@ -76,12 +76,8 @@
       <a href="#"><div class="container6"><div class="row"><div class="mobile-s"><i class="fab fa-slack fa-2x"></i></div><div class="mobile-l"><h6>LA Community Fridge</h6></div></div></div></a>
     </ul>
   </div>
-</nav>
 
-<div id="header">
   <img src="images/logofridge.png" class="fridgelogo" alt="...">
-</div>
-
 
 
   <div class="dropdown" id="fadeshow1">
@@ -95,8 +91,7 @@
         </ul>
         <a class="btn btn-primary btn-lg btn-right" href="#" role="button">Free Food</a></div>
   </div>
-
- 
+</nav>
 
    
      <!-- Used Bootstrap jumbotron system -->
@@ -108,32 +103,43 @@
      <div class="container">
       <div class="grid">
           <div class="img-wrapper">
-            <span class="dot blur"></span>
             
-            <span class="dot"><div class="content"><h5>About Us</h5><br><br><br><div class="h7"></div><h4></h4>
+            <span class="dot blur"></span>
+           
+            <div class="imgwithtext">
+                <img class="top1" src="images/leftphoto.png">
+                <span class="dot2"><div class="contenttop"><h5>About Us</h5>
                 </div></span>
-              <img class="top1"src="images/leftphoto.png">
+              </div>
             
           </div>
           <div class="img-wrapper">
             <span class="dot blur"></span>
             
-            <span class="dot"><div class="content"><h5>Get<br>Involved</h5><br><div class="h7"></div>
-                <h6><br></h6><h4></h4>
-                </div></span>
-            
+            <div class="imgwithtext">
             <img class="top1" src="images/hands.png">
+            <span class="dot2"><div class="contenttop"><h5>Get Involved</h5>
+              </div></span>    
+            </div>
+            
             
         </div>
         <div class="img-wrapper">
             <span class="dot blur"></span>
-            
-            <span class="dot"><div class="content"><br><h5>FAQ</h5><br><br><br><br><div class="h7"></div>
-              <h5></h5><h4></h4></div></span>
-            
+            <div class="imgwithtext">
             <img class="top1"src="images/smilegirls.png">
+            <span class="dot2"><div class="contenttop"><h5>FAQ</h5></div></span>
+            </div>
         </div>
       </div>
+      
+        
+
+        
+
+       
+
+      
     </div>
     <br><br>
     <!-- Used Bootstrap columns-->
@@ -203,11 +209,11 @@
     </div>
 <!-- Card Carousel-->
 
-<div class="important"><h5>Hear from our Community</h5></div>
-<br><br>
 
 <div class="flex-container">
   <div class="container">
+    <div class="important"><h5>Hear from our Community</h5></div>
+    <br><br>
     <div class="grid">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="images/hear1.png" alt="Card image cap">
